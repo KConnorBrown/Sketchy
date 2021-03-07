@@ -1,8 +1,3 @@
-README Sketchy:
-
-HANDIN:
-This is my final handin for the final project Sketchy.
-
 DESIGN CHOICES:
 The biggest unusual design choice I have is not creating a layer every time a shape is created.
 I only create a layer when raising or lowering a shape a "layer". A layer instance is associated with a given shape.
@@ -12,9 +7,3 @@ to define in the first place since it might have a different index in the shapes
  
 I used the suggested interfaces and avoided abstract classes. This design choice led to more repeated code
 in my sketchy shapes class but it allows for much easier implementation in my Sketchy class.
-
-KNOWN BUGS:
-I encountered a bug where upon releasing control/shift after rotating/resizing a shape but still holding down the mouse,
-the shape would set its location to the cursors position thus appearing to "jump" across the screen. I minimized this
-bug by using a boolean justRotatedOrResized which prevented a selected shape from translating after rotating or resizing until 
-a new mouse pressed event was detected. That doesn't work just like the demo but it's as close as I could get :)
